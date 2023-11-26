@@ -15,7 +15,7 @@ export default function Homepage() {
           <input type="search" placeholder="Apple Watch, Samsung S21, MacBook Pro" />
         <div className="row">
           <div className="product-item">
-            <img src={product1} alt="watch" />
+            <img src={product1} alt="watch" onClick='product-details' /> 
             <p className="product-name">Apple Watch</p>
             <p className="product-color">Series5 SE</p>
             <p className="product-price">R 529.99 </p>
