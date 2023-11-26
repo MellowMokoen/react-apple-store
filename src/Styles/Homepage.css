@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .product-container {
         background-color: white;
         min-height: 100vh;
-        margin: 20px 20px;
         display: grid;
         grid-template-rows: auto auto;
         align-items: center;
@@ -15,8 +19,16 @@
     gap: 20px;
 }
 
+@media (max-width:768px) {
+    .product-container .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
 .product-container input {
     width: 50%;
+    font-size: small;
     box-sizing: border-box;
     justify-self: center;
     margin: 40px auto;
@@ -43,8 +55,8 @@
 .product-item {
     text-align: center;
     line-height: 6px;
-    margin-bottom: 15px;
-    margin-top: 23px;
+    margin-bottom: 13px;
+    margin-top: 20px;
 }
 
 .product-name {

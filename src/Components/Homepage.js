@@ -8,6 +8,7 @@ import product5 from "../Images/Name=Iphone-12-03.png";
 import product6 from "../Images/Name=Iphone-12-04.png";
 import product7 from "../Images/Name=Iphone-12-Pro-01.png";
 import product8 from "../Images/Name=Iphone-12-Pro-02.png";
+import button from "../Images/Button.png";
 
 export default function Homepage() {
     return (
