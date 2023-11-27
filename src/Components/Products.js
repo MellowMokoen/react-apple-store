@@ -1,12 +1,12 @@
-import React from 'react';
-import image1 from '../Images/Name=Watch.png';
-import image2 from '../Images/Name=Headphones.png'
-import image3 from '../Images/Name=Iphone-12-01.png'
-import image4 from '../Images/Name=Iphone-12-02.png'
-import image5 from '../Images/Name=Iphone-12-03.png'
-import image6 from '../Images/Name=Iphone-12-04.png'
-import image7 from '../Images/Name=Iphone-12-03.png'
-import image8 from '../Images/Name=Iphone-12-03.png'
+
+import product1 from "../Images/Name=Watch.png";
+import product2 from "../Images/Name=Headphones.png";
+import product3 from "../Images/Name=Iphone-12-01.png";
+import product4 from "../Images/Name=Iphone-12-02.png";
+import product5 from "../Images/Name=Iphone-12-03.png";
+import product6 from "../Images/Name=Iphone-12-04.png";
+import product7 from "../Images/Name=Iphone-12-Pro-01.png";
+import product8 from "../Images/Name=Iphone-12-Pro-02.png";
 
 const products = [
     {
@@ -16,7 +16,7 @@ const products = [
       rating: '⭐⭐⭐⭐',
       price: 529.99,
       currency: '$',
-      imageUrl: image1,
+      imageUrl: product1,
       specs: [
         'This is the Apple Watch Series 5 SE, a cutting-edge blend of style, functionality, and innovation, designed to accompany you on every step of your journey. Embrace the future with this versatile smartwatch, packed with features to suit both daily needs and adventurous lifestyles. Whether you are a tech enthusiast seeking the latest gadget or someone looking to enhance your daily life with smart technology, the Apple Watch Series 5 SE offers something for everyone. Its more than just a watch its a lifestyle companion. Invest in yourself and embrace the future of wearable technology. Order the Apple Watch Series 5 SE today and take the first step towards a smarter, healthier, and more connected life.',
       ],
@@ -28,7 +28,7 @@ const products = [
       rating: '⭐⭐⭐',
       price: 39.99,
       currency: '$',
-      imageUrl: image2,
+      imageUrl: product2,
       specs: [
         'Experience the true essence of music with Sony ZX330BT Headphones, designed for those who live, breathe, and dream sound. With unmatched comfort and innovative technology, these wireless headphones bring you closer to your favorite tracks, offering an immersive auditory experience like no other. Sonys ZX330BT Headphones are more than just an accessory; they are an extension of your personality and a testament to your passion for music. Whether you are at home, on a commute, or taking a break from the world, these headphones provide an escape to a world where only music matters. Indulge in the sound. Experience comfort. Embrace the Sony ZX330BT Headphones today and redefine what music means to you.',
       ],
@@ -40,7 +40,7 @@ const products = [
       rating: '⭐⭐⭐⭐⭐',
       price: 619.99,
       currency: '$',
-      imageUrl: image3,
+      imageUrl: product3,
       specs: [
         'Display: Liquid Retina HD display',
         'Processor: A13 Bionic chip',
@@ -57,7 +57,7 @@ const products = [
       rating: '⭐⭐⭐⭐⭐',
       price: 619.99,
       currency: '$',
-      imageUrl: image4,
+      imageUrl: product4,
       specs: [
         'Display: Liquid Retina HD display',
         'Processor: A13 Bionic chip',
@@ -74,7 +74,7 @@ const products = [
       rating: '⭐⭐⭐⭐⭐',
       price: 619.99,
       currency: '$',
-      imageUrl: image5,
+      imageUrl: product5,
       specs: [
         'Display: Liquid Retina HD display',
         'Processor: A13 Bionic chip',
@@ -91,7 +91,7 @@ const products = [
       rating: '⭐⭐⭐⭐⭐',
       price: 619.99,
       currency: '$',
-      imageUrl: image6,
+      imageUrl: product6,
       specs: [
         'Display: Liquid Retina HD display',
         'Processor: A13 Bionic chip',
@@ -108,7 +108,7 @@ const products = [
       rating: '⭐⭐⭐⭐⭐',
       price: 699.00,
       currency: '$',
-      imageUrl: image7,
+      imageUrl: product7,
       specs: [
         'Display: Super Retina XDR display',
         'Processor: A15 Bionic chip',
@@ -125,7 +125,7 @@ const products = [
       rating: '⭐⭐⭐⭐⭐',
       price: 619.99,
       currency: '$',
-      imageUrl: image8,
+      imageUrl: product8,
       specs: [
         'Display: Super Retina XDR display',
         'Processor: A16 Bionic chip',

@@ -9,13 +9,14 @@ import product6 from "../Images/Name=Iphone-12-04.png";
 import product7 from "../Images/Name=Iphone-12-Pro-01.png";
 import product8 from "../Images/Name=Iphone-12-Pro-02.png";
 
+
 export default function Homepage() {
     return (
      <div className="product-container">
           <input type="search" placeholder="Apple Watch, Samsung S21, MacBook Pro" />
         <div className="row">
           <div className="product-item">
-            <img src={product1} alt="watch" onClick='product-details' /> 
+            <img src={product1} alt="watch" />
             <p className="product-name">Apple Watch</p>
             <p className="product-color">Series5 SE</p>
             <p className="product-price">R 529.99 </p>

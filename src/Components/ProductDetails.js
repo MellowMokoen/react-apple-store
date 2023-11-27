@@ -1,63 +1,24 @@
-import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import products from './Products';
-import CartOverview from './CartOverview';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
-import '../Styles/ProductDetails.css'
+import React from 'react';
+import products from './Products'; 
 
 const ProductDetails = () => {
-  const { id } = useParams();
-  const product = products.find((p) => p.id === parseInt(id));
-
-  // State to manage items in the shopping bag
-  const [shoppingBag, setShoppingBag] = useState([]);
-
-  // Function to add a product to the shopping bag
-  const addToBag = (product) => {
-    setShoppingBag([...shoppingBag, product]);
-  };
-
-  if (!product) {
-    return <div className="product-not-found">Product not found</div>;
-  }
-  
-
   return (
-    <div className="product-details-container container mt-5">
-      <CartOverview shoppingBag={shoppingBag} />
-      <Link to="/" className="back-home-link">
-        <button className="back-home-button">Keep Shopping</button>
-      </Link>
-      <div className="product-details">
-        <div className="product-img-info">
-        <img src={product.imageUrl} className="product-img" alt={product.title} />
-          <div className="product-info">
-            <div className="product-title-container">
-              <h1 className="product-title">{product.title}</h1>
-            </div>
-            <p className="product-description">{product.description}</p>
-            <p className="product-rating">Rating: {product.rating}</p>
-            <p className="product-price">
-              Price: {product.currency} {product.price.toFixed(2)}
-            </p>
-            <Link to="/Bag" className="add-to-bag-link">
-              <button className="add-to-bag-button" onClick={() => addToBag(product)}>
-                <FontAwesomeIcon icon={faShoppingBag} /> Add to Bag
-              </button>
-            </Link>
-          </div>
+    <div>
+      <h2>Products List</h2>
+      {products.map(product => (
+        <div key={product.id}>
+          <h3>{product.title}</h3>
+          <p>Rating: {product.rating}</p>
+          <p>Description: {product.description}</p>
+          <p>Price: {`${product.currency} ${product.price.toFixed(2)}`}</p>
+          <h4>Specifications:</h4>
+          <ul>
+            {product.specs.map((spec, index) => (
+              <li key={index}>{spec}</li>
+            ))}
+          </ul>
         </div>
-        <hr />
-        <ul className="product-specs-list">
-          <h6 className="specs-title">Product Specifications:</h6>
-          {product.specs.map((spec, index) => (
-            <li key={index} className="spec-item">
-              {spec}
-            </li>
-          ))}
-        </ul>
-      </div>
+      ))}
     </div>
   );
 };

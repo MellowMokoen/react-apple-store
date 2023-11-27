@@ -26,8 +26,8 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps)(CartSummary);
-
 */
+
 import React from "react";
 import '../Styles/CartOverview.css';
 
@@ -39,5 +39,4 @@ export default function CartOverview () {
         
     )
 }
-
 
