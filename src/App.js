@@ -1,5 +1,4 @@
 import './App.css';
-import './App.css';
 import Homepage from "./Components/Homepage";
 import MenuSidebar from './Components/MenuSidebar';
 import CartOverview from './Components/CartOverview';
@@ -8,8 +7,8 @@ function App() {
   return (
     <div className="main-container">
       <MenuSidebar />
-      <Homepage />
-    <CartOverview />
+     <Homepage />
+     <CartOverview />
     
    
     </div>
@@ -17,3 +16,4 @@ function App() {
 }
 
 export default App;
+

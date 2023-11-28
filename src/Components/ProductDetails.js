@@ -1,12 +1,13 @@
 import React from 'react';
 import products from './Products'; 
-
-const ProductDetails = () => {
+import '../Styles/ProductDetails.css'
+const ProductDetails= () => {
   return (
     <div>
-      <h2>Products List</h2>
+      <h2>Product Details</h2>
       {products.map(product => (
         <div key={product.id}>
+          <img src={product.imageUrl} alt={product.title} />
           <h3>{product.title}</h3>
           <p>Rating: {product.rating}</p>
           <p>Description: {product.description}</p>
@@ -17,6 +18,7 @@ const ProductDetails = () => {
               <li key={index}>{spec}</li>
             ))}
           </ul>
+          <hr />
         </div>
       ))}
     </div>
@@ -24,3 +26,4 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+

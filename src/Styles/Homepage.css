@@ -61,3 +61,21 @@
     font-size: medium;
     font-weight: bold;
 }
+
+.buy-button {
+     
+    background-color: #343639;
+    color: white;
+    border: none;
+    padding: 5x;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .buy-button img {
+    width: 10px;
+    height: 10px;
+    margin: -1px;
+  }
+  
